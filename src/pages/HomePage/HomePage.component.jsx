@@ -4,6 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import Logo from "../../components/Logo/Logo.component";
 import Authentication from "../../components/Authentication/Authentication.component";
 import Menu from "../../components/Menu/Menu.component";
+import Feed from "../Feed/Feed.component";
 
 const HomePage = () => {
   return (
@@ -16,8 +17,10 @@ const HomePage = () => {
         <Row>
           <Menu />
         </Row>
+        <Row>
+          <Feed />
+        </Row>
       </Container>
-      <Row></Row>
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Menu = ({ location }) => {
       <Nav activeKey={location.pathname} as="ul" className="menu-ul">
         {links.map(({ text, link }, index) => {
           return (
-            <Nav.Link as="a" to="link" key={`menu-${index}`} href={link}>
+            <Nav.Link as="a" to={link} key={`menu-${index}`} href={link}>
               {text}
             </Nav.Link>
           );
