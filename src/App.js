@@ -2,6 +2,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Feed from "./pages/Feed/Feed.component";
 import SignIn from "./pages/SignIn/SignIn.component";
+import SignUp from "./pages/SignUp/SignUp.component";
 import { Container, Row } from "react-bootstrap";
 import Logo from "./components/Logo/Logo.component";
 import Authentication from "./components/Authentication/Authentication.component";
@@ -24,6 +25,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Feed} />
               <Route exact path="/signin" component={SignIn} />
+              <Route exact path="/signup" component={SignUp} />
             </Switch>
           </Row>
         </Container>
