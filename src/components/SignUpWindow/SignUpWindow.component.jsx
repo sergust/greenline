@@ -87,11 +87,13 @@ const SignUpWindow = () => {
           Sign Up
         </Button>
       </Form.Group>
-      <Link to="/signin">
-        <Button variant="link" onClick={signUp}>
-          Have an account? Log in!
-        </Button>
-      </Link>
+      <Form.Group>
+        <Link to="/signin">
+          <Button variant="link" onClick={signUp}>
+            Have an account? Log in!
+          </Button>
+        </Link>
+      </Form.Group>
     </Form>
   );
 };

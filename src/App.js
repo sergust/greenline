@@ -4,8 +4,7 @@ import Feed from "./pages/Feed/Feed.component";
 import SignIn from "./pages/SignIn/SignIn.component";
 import SignUp from "./pages/SignUp/SignUp.component";
 import { Container, Row } from "react-bootstrap";
-import Logo from "./components/Logo/Logo.component";
-import Authentication from "./components/Authentication/Authentication.component";
+import Header from "./components/Header/Header.component";
 import Menu from "./components/Menu/Menu.component";
 import React from "react";
 
@@ -14,10 +13,7 @@ function App() {
     <div className="App">
       <div>
         <Container>
-          <Row className="header">
-            <Logo />
-            <Authentication />
-          </Row>
+          <Header />
           <Row>
             <Menu />
           </Row>
